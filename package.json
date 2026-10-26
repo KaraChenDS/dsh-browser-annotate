@@ -48,6 +48,6 @@
     "in-app-browser"
   ],
   "engines": {
-    "dsh": ">=0.2.1"
+    "dsh": ">=0.2.1-0"
   }
 }
