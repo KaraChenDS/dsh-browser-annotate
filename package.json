@@ -1,0 +1,53 @@
+{
+  "name": "dsh-browser-annotate",
+  "version": "1.0.0",
+  "description": "Annotate elements inside the in-app browser and send them to the agent as context",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "icon": "./icon.svg",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  },
+  "license": "MIT",
+  "author": "KaraChenDS",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaraChenDS/dsh-browser-annotate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KaraChenDS/dsh-browser-annotate/issues"
+  },
+  "homepage": "https://github.com/KaraChenDS/dsh-browser-annotate#readme",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "browser",
+    "annotation",
+    "annotate",
+    "in-app-browser"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1"
+  }
+}

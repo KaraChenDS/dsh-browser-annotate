@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Browser page annotations",
+    "description": "Pick elements in the in-app browser, annotate them, and insert the result into the composer as structured context."
+  }
+}

@@ -1,0 +1,6 @@
+# One inserted row: the annotator is a pure Client surface plugin, so the Host
+# half exists only to make the row appear in the profile and to let the loader
+# discover the `dsh.client` bundle.
+- insert:
+    - id: browser-annotate
+      name: 'dsh-browser-annotate'
